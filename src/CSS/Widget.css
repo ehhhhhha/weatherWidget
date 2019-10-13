@@ -8,6 +8,7 @@
 
 #widget-title {
     padding-bottom: 0px;
+    word-wrap:break-word;
 }
 
 #widget-city {
@@ -16,5 +17,8 @@
 
 #widget-wind {
     margin: 5px 10px 0px 0px;
-    font-size: 12px;
+}
+
+#windget-wind-info {
+    font-size: 11px;
 }

@@ -37,7 +37,10 @@ const Widget = (props) => {
                     <div className="ten column wide row widget">
                         {   // if show wind box is checked
                             props.showWind &&
-                            <div ><b id="widget-wind">Wind </b>{windInfo}</div>
+                            <div id="windget-wind-info">
+                                <b id="widget-wind">Wind </b>
+                                {windInfo}
+                            </div>
                         }
                     </div>
                 </div>

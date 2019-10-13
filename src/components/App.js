@@ -8,8 +8,8 @@ import UnitParser from '../UnitParser';
 
 class App extends React.Component {
 
-    // store geolocation data
-    geoData = {};
+    // initilaize empty geolocation data, it will only be initialized one time 
+    geoData = null;
 
     state = {
         temperature: null,
@@ -55,15 +55,17 @@ class App extends React.Component {
                 // request weather data
                 this.getWeather(position);
             },
-            (err) => this.setState({ errorMessage: err.message })
-        );
+            (err) => console.log(err.message));
     }
+
 
     /**
      * Call OpenWeatherMap API based on current location
      * @param {response} position geolocation data 
      */
     getWeather = async (position) => {
+        // if geolocation not initialzied then do nothing
+        if (position === null) return;
         const longitude = position.coords.longitude;
         const latitude = position.coords.latitude;
         // send GET request with location data using axios instance
@@ -127,6 +129,6 @@ class App extends React.Component {
             </div >
         );
     }
-}
 
+}
 export default App;
