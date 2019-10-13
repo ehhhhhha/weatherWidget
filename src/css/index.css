@@ -1,0 +1,7 @@
+.blue-floated-line {
+    border: 2px solid rgb(0, 110, 213);
+}
+.root-container {
+    margin: 100px auto;
+    width: 50% !important;
+}
