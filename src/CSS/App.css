@@ -7,31 +7,3 @@
     position: flex;
     border-radius: 0px 0px 10px 10px;
 }
-div #widget-card {
-    padding: 11px !important;
-}
-div .item  {
-    padding: 5px 0px 3px 0px !important;
-}
-
-
-#editor-box {
-    margin-right: 15px; 
-}
-
-#temperature {
-    font-size: 42px;
-}
-
-#widget-title {
-    padding-bottom: 0px;
-}
-
-#widget-city {
-    padding-bottom: 15px;
-}
-
-#widget-wind {
-    margin: 5px 10px 0px 0px;
-    font-size: 12px;
-}
